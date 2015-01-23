@@ -15,7 +15,7 @@
 <!-- include the next line to use jquery functions in your application
 you must download this and include the directory your html file is in
 -->
-        <script type="text/javascript" charset="utf-8" src="jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery-1.3.2.min.js"></script>
 
 <!-- main scripts used in this example -->
  <script type="text/javascript" charset="utf-8">
@@ -74,7 +74,7 @@ object stored in variable db
   // note the UserId column is an auto incrementing column which is
 // useful if you want to pull back distinct rows
   // easily from the table.
-   tx.executeSql( 'CREATE TABLE IF NOT EXISTS User(UserId INTEGER NOT NULL PRIMARY KEY, FirstName TEXT NOT NULL, LastName TEXT NOT NULL)', [],nullHandler,errorHandler);
+   tx.executeSql('CREATE TABLE IF NOT EXISTS User(UserId INTEGER NOT NULL PRIMARY KEY, FirstName TEXT NOT NULL, LastName TEXT NOT NULL)', [],nullHandler,errorHandler);
  },errorHandler,successCallBack);
 
 }
